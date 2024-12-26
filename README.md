@@ -783,8 +783,10 @@ Authorization: <your_access_token>
 - **요청 바디**: 없음
 - **경로 파라미터**:
     - `ticker` (string, 필수): 조회하려는 주식의 티커 심볼입니다. 예: `AAPL`, `GOOG`, `TSLA`. 대문자로 입력해야 합니다.
-    - `indicator_type` (string, 필수): 조회하려는 기술 지표 유형입니다. 예: `SMA_50, SMA_200, EMA_12, EMA_26, RSI, PB_RATIO, PE_RATIO` (단순 이동 평균).
+    - `indicator_type` (string, 필수): 조회하려는 기술 지표 유형입니다. 예: `'RSI', 'MACD', 'MACD_Signal', 'MACD_Hist', 'SMA_50', 'SMA_200', 'EMA_12', 'EMA_26', 'PB_RATIO', 'PE_RATIO'`
 - **쿼리 파라미터**:
+
+
     - `period` (string, 필수): 조회할 기간을 설정합니다. 다음 값 중 하나를 입력해야 합니다:
         - `1d`: 1일 데이터
         - `1w`: 1주 데이터
